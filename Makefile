@@ -1,6 +1,6 @@
 HOST = quay.io
 NAME = humu/rq-cloudwatch
-VERSION = 0.0.1
+VERSION = 0.0.2
 
 build:
 	docker build -t $(HOST)/$(NAME):$(VERSION) --rm .
