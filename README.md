@@ -1,5 +1,3 @@
-[![Docker Repository on Quay](https://quay.io/repository/humu/rq-cloudwatch/status "Docker Repository on Quay")](https://quay.io/repository/humu/rq-cloudwatch)
-
 # RQ CloudWatch [![](https://quay.io/repository/humu/rq-cloudwatch/status)](https://quay.io/repository/humu/rq-cloudwatch)
 
 Utility to report [RQ](http://python-rq.org/) queue and worker status to AWS CloudWatch. It can be run either as a standalone utility or as a Docker container.
@@ -26,7 +24,7 @@ where:
 
 # Running as command line utility
 
-It an report data once (good for cron job) or in a forever loop (good for running as a runit service). See help for details.
+It can report data once (good for cron job) or in a forever loop (good for running as a runit service). See help for details.
 
 ```console
 ./mon-put-rq-stats.py -h
