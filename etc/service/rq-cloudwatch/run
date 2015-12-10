@@ -1,0 +1,9 @@
+#!/bin/bash
+
+exec /mon-put-rq-stats.py \
+  --pid /mon-put-rq-stats.pid \
+  --region $AWS_REGION \
+  --interval $INTERVAL \
+  --env $ENVIRONMENT \
+  --url $REDIS_URL \
+  2>&1 | logger -t rq-cloudwatch
